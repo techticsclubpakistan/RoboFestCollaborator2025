@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D4F6CC;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0e1131;
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #EF5B0C;
+}
+
+/* Header */
+header {
+    background-color: #0e1131;
+    color: white;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    color: #EF5B0C;
+}
+
+.text-section p {
+    font-size: 1.2em;
+    color: #3CCF4E;
+    margin: 5px 0;
+}
+
+.meet-strip {
+    background-color: #EF5B0C;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+.meet-strip h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Sponsor Container */
+.sponsor-container {
+    margin: 40px 10px 20px;
+    padding-top: 40px;
+}
+
+/* Sponsor Blocks */
+.sponsor-block {
+    background-color: white;
+    margin: 20px auto;
+    padding: 25px;
+    width: 85%;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-block h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #003865;
+}
+
+/* Logo Grid */
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-container img {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Category Colors (optional) */
+.gold h2 { color: goldenrod; }
+.silver h2 { color: silver; }
+.bronze h2 { color: #cd7f32; }
+.valued h2 { color: #3CCF4E; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .text-section h1 { font-size: 2em; }
+    .text-section p { font-size: 1em; }
+    .sponsor-block h2 { font-size: 1.4em; }
+}
